@@ -1,3 +1,5 @@
+execute pathogen#infect()
+
 let mapleader = " " " space is <Leader>-Key
 
 set number
@@ -12,8 +14,8 @@ set hlsearch
 set incsearch
 set wildmenu
 set nocompatible      " We're running Vim, not Vi!
-set spell spelllang=de,en
-set spell!
+"set spell spelllang=de,en
+"set spell!
 
 "set background=dark
 colorscheme darkblue
