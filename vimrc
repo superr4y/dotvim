@@ -47,6 +47,13 @@ map <Leader>x <Esc>:%!xxd<Cr>
 map <Leader>X <Esc>:%!xxd -r<Cr>
 
 
+" Plugins 
+
+let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsJumpForwardTrigger="<c-b>"
+let g:UltiSnipsJumpBackwardTrigger="<c-z>"
+
+
 "" Plugins
 "set rtp+=~/.vim/bundle/vundle/
 "call vundle#rc()
