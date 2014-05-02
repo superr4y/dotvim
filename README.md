@@ -16,4 +16,5 @@ Switch to the `~/.vim` directory, and fetch submodules:
 Add Plugin:
     cd ~/.vim
     git submodule add <url> bundle/<plugin name>
-
+    git add .
+    git commit -m "w0000t"
