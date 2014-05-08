@@ -19,20 +19,21 @@ set nospell
 
 "set background=dark
 colorscheme darkblue
-filetype off          " Enable filetype detection
+filetype on           " Enable filetype detection
 
 filetype indent on    " Enable filetype-specific indenting
 filetype plugin on    " Enable filetype-specific plugins
 
-"autocmd FileT/ype python setlocal expandtab shiftwidth=4 tabstop=4 softtabstop=4
+"autocmd FileType python setlocal expandtab shiftwidth=4 tabstop=4 softtabstop=4
 autocmd FileType python nnoremap <F5> :w<CR>:!python "%"<CR>
 autocmd FileType perl nnoremap <F5> :w<CR>:!perl "%"<CR>
 autocmd FileType ruby nnoremap <F5> :w<CR>:!ruby "%"<CR>
 autocmd FileType tex nnoremap <F5> :w<CR>:!pdflatex "%"<CR>
-autocmd FileType c noremap <F5> :w<CR>:!gcc % -o %.bin;./%.bin<CR>
+autocmd FileType c nnoremap <F5> :w<CR>:!gcc % -o %.bin;./%.bin<CR>
+autocmd FileType sh nnoremap <F5> :w<CR>:!zsh "%"<CR>
 
 " follow function
-nnoremap <c-f> <c-]> 
+nnoremap <Leader>f <c-]> 
 
 " write file
 nnoremap <Leader>w <Esc>:w<CR>
@@ -47,6 +48,26 @@ nnoremap <Leader>X <Esc>:%!xxd -r<Cr>
 
 " Don't have to type <shift>:
 nnoremap ; :
+nnoremap : <nop>
+
+" Upper Case
+nnoremap <Leader>u <esc>viwUi
+
+" Easy vimrc edit
+nnoremap <leader>ev :split $MYVIMRC<cr>
+nnoremap <leader>sv :source $MYVIMRC<cr>
+
+" Surround word with ' or "  
+nnoremap <leader>" viw<esc>a"<esc>hbi"<esc>lel
+nnoremap <leader>' viw<esc>a'<esc>hbi'<esc>lel
+
+" Move begin and end of the line
+nnoremap H 0
+nnoremap L g_
+
+" Fast Normal Mode
+inoremap jk <esc>
+inoremap <esc> <nop>
 
 
 " Plugins 
