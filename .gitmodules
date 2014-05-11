@@ -10,3 +10,6 @@
 [submodule "bundle/vim-multiple-cursors"]
 	path = bundle/vim-multiple-cursors
 	url = https://github.com/terryma/vim-multiple-cursors
+[submodule "bundle/vim-browser-reload-linux"]
+	path = bundle/vim-browser-reload-linux
+	url = https://github.com/lordm/vim-browser-reload-linux.git
