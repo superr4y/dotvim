@@ -16,6 +16,7 @@ set wildmenu
 set nocompatible      " We're running Vim, not Vi!
 set spell spelllang=de,en
 set nospell
+set omnifunc=syntaxcomplete#Complete
 
 "set background=dark
 colorscheme darkblue
@@ -25,12 +26,18 @@ filetype indent on    " Enable filetype-specific indenting
 filetype plugin on    " Enable filetype-specific plugins
 
 "autocmd FileType python setlocal expandtab shiftwidth=4 tabstop=4 softtabstop=4
-autocmd FileType python nnoremap <F5> :w<CR>:!python "%"<CR>
-autocmd FileType perl nnoremap <F5> :w<CR>:!perl "%"<CR>
-autocmd FileType ruby nnoremap <F5> :w<CR>:!ruby "%"<CR>
-autocmd FileType tex nnoremap <F5> :w<CR>:!pdflatex "%"<CR>
-autocmd FileType c nnoremap <F5> :w<CR>:!gcc % -o %.bin;./%.bin<CR>
-autocmd FileType sh nnoremap <F5> :w<CR>:!zsh "%"<CR>
+
+
+augroup filetypes
+    autocmd!
+    autocmd FileType python nnoremap <F5> :w<CR>:!python "%"<CR>
+    autocmd FileType perl nnoremap <F5> :w<CR>:!perl "%"<CR>
+    autocmd FileType ruby nnoremap <F5> :w<CR>:!ruby "%"<CR>
+    autocmd FileType tex nnoremap <F5> :w<CR>:!pdflatex "%"<CR>
+    autocmd FileType c nnoremap <F5> :w<CR>:!gcc "%" -o "%".bin;./"%".bin<CR>
+    autocmd FileType sh nnoremap <F5> :w<CR>:!zsh "%"<CR>
+    autocmd FileType javascript nnoremap <F5> :w<CR>:!js17 "%"<CR>
+augroup END
 
 " follow function
 nnoremap <Leader>f <c-]> 
