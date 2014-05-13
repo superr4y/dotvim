@@ -1,2 +1,2 @@
 *.swp
-bundle/vim-multiple-cursors/*
+*bundle/vim-multiple-cursors/*
