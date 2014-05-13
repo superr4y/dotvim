@@ -1,4 +1,5 @@
 execute pathogen#infect()
+Helptags
 
 let mapleader = " " " space is <Leader>-Key
 
