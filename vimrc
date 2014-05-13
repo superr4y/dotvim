@@ -18,8 +18,8 @@ set spell spelllang=de,en
 set nospell
 set omnifunc=syntaxcomplete#Complete
 
-"set background=dark
-colorscheme darkblue
+set background=dark
+colorscheme solarized
 filetype on           " Enable filetype detection
 
 filetype indent on    " Enable filetype-specific indenting
