@@ -75,7 +75,23 @@ nnoremap L g_
 
 " Fast Normal Mode
 inoremap jk <esc>
-inoremap <esc> <nop>
+inoremap jj <esc>
+inoremap kk <esc>
+inoremap kj <esc>
+inoremap jjk <esc>
+inoremap kkj <esc>
+"viwUi
+
+" Easy vimrc edit
+nnoremap <leader>ev :split $MYVIMRC<cr>
+nnoremap <leader>sv :source $MYVIMRC<cr>
+
+" Surround word with ' or "  
+nnoremap <leader>" viw<esc>a"<esc>hbi"<esc>lel
+nnoremap <leader>' viw<esc>a'<esc>hbi'<esc>lel
+
+" Move begin and end of the
+"inoremap <esc> <nop>
 
 
 " Plugins 
