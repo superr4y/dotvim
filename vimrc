@@ -47,8 +47,8 @@ nnoremap <Leader>f <c-]>
 nnoremap <Leader>w <Esc>:w<CR>
 
 " copy and past
-nnoremap <Leader>c "+y
-nnoremap <Leader>v "+p
+vnoremap <Leader>c "+y
+vnoremap <Leader>v "+p
 
 " Hexview
 nnoremap <Leader>x <Esc>:%!xxd<Cr>
