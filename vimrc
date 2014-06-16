@@ -18,6 +18,7 @@ set nocompatible      " We're running Vim, not Vi!
 set spell spelllang=de,en
 set nospell
 set omnifunc=syntaxcomplete#Complete
+set laststatus=2
 
 set background=dark
 colorscheme solarized
@@ -98,3 +99,11 @@ nnoremap <leader>' viw<esc>a'<esc>hbi'<esc>lel
 let g:UltiSnipsExpandTrigger="<tab>"
 let g:UltiSnipsJumpForwardTrigger="<c-b>"
 let g:UltiSnipsJumpBackwardTrigger="<c-z>"
+
+
+" bufferline in statusline and not in command bar
+let g:bufferline_echo = 0
+autocmd VimEnter *
+  \ let &statusline='%{bufferline#refresh_status()}'
+    \ .bufferline#get_status_string()
+
