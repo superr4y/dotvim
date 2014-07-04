@@ -32,7 +32,7 @@ filetype plugin on    " Enable filetype-specific plugins
 
 augroup filetypes
     autocmd!
-    autocmd FileType python nnoremap <F5> :w<CR>:!python "%"<CR>
+    autocmd FileType python nnoremap <F5> :w<CR>:!python2 "%"<CR>
     autocmd FileType perl nnoremap <F5> :w<CR>:!perl "%"<CR>
     autocmd FileType ruby nnoremap <F5> :w<CR>:!ruby "%"<CR>
     autocmd FileType tex nnoremap <F5> :w<CR>:!pdflatex "%"<CR>
@@ -93,6 +93,10 @@ nnoremap <leader>' viw<esc>a'<esc>hbi'<esc>lel
 
 " Move begin and end of the
 "inoremap <esc> <nop>
+
+" Switch buffers
+nnoremap <Right> :bnext<CR>
+nnoremap <Left> :bprev<CR>
 
 
 " Plugins 
