@@ -20,6 +20,8 @@ set nospell
 set omnifunc=syntaxcomplete#Complete
 set laststatus=2
 
+" set modeline
+
 set background=dark
 colorscheme solarized
 filetype on           " Enable filetype detection
@@ -57,7 +59,7 @@ nnoremap <Leader>X <Esc>:%!xxd -r<Cr>
 
 " Don't have to type <shift>:
 nnoremap ; :
-nnoremap : <nop>
+" nnoremap : <nop>
 
 " Upper Case
 nnoremap <Leader>u <esc>viwUi
@@ -97,6 +99,7 @@ nnoremap <leader>' viw<esc>a'<esc>hbi'<esc>lel
 " Switch buffers
 nnoremap <Right> :bnext<CR>
 nnoremap <Left> :bprev<CR>
+
 
 
 " Plugins 
