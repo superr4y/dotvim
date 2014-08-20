@@ -19,6 +19,7 @@ set spell spelllang=de,en
 set nospell
 set omnifunc=syntaxcomplete#Complete
 set laststatus=2
+set guifont="Monospace 12"
 
 " set modeline
 
