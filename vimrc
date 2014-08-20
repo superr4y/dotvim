@@ -115,3 +115,6 @@ autocmd VimEnter *
   \ let &statusline='%{bufferline#refresh_status()}'
     \ .bufferline#get_status_string()
 
+
+Plugin 'mattn/emmet-vim'
+let g:user_emmet_leader_key='<C-Z>'
