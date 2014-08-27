@@ -102,6 +102,14 @@ nnoremap <Right> :bnext<CR>
 nnoremap <Left> :bprev<CR>
 
 
+" Reload Firefox
+nnoremap <leader>r :w<cr>:FirefoxReload<cr>
+
+" CtrlP
+nnoremap <leader>p :w<cr>:CtrlPClearAllCache<cr>:CtrlP<cr>
+
+" NERDTree
+nnoremap <leader>t :NERDTreeToggle<cr>
 
 " Plugins 
 let g:UltiSnipsExpandTrigger="<tab>"
@@ -116,5 +124,7 @@ autocmd VimEnter *
     \ .bufferline#get_status_string()
 
 
-Plugin 'mattn/emmet-vim'
+" Plugin 'mattn/emmet-vim'
 let g:user_emmet_leader_key='<C-Z>'
+
+
