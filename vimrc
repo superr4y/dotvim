@@ -20,6 +20,9 @@ set nospell
 set omnifunc=syntaxcomplete#Complete
 set laststatus=2
 set guifont="Monospace 12"
+set guioptions-=m  "remove menu bar
+set guioptions-=T  "remove toolbar
+
 
 " set modeline
 
