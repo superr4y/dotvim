@@ -26,8 +26,8 @@ set guioptions-=T  "remove toolbar
 
 " set modeline
 
-set background=dark
-colorscheme solarized
+" set background=dark
+" colorscheme solarized
 filetype on           " Enable filetype detection
 
 filetype indent on    " Enable filetype-specific indenting
@@ -81,12 +81,12 @@ nnoremap H 0
 nnoremap L g_
 
 " Fast Normal Mode
-inoremap jk <esc>
-inoremap jj <esc>
-inoremap kk <esc>
-inoremap kj <esc>
-inoremap jjk <esc>
-inoremap kkj <esc>
+" inoremap jk <esc>
+" inoremap jj <esc>
+" inoremap kk <esc>
+" inoremap kj <esc>
+" inoremap jjk <esc>
+" inoremap kkj <esc>
 "viwUi
 
 " Easy vimrc edit
@@ -109,7 +109,7 @@ nnoremap <Left> :bprev<CR>
 nnoremap <leader>r :w<cr>:FirefoxReload<cr>
 
 " CtrlP
-nnoremap <leader>p :w<cr>:CtrlPClearAllCache<cr>:CtrlP<cr>
+" nnoremap <leader>p :w<cr>:CtrlPClearAllCache<cr>:CtrlP<cr>
 
 " NERDTree
 nnoremap <leader>t :NERDTreeToggle<cr>
